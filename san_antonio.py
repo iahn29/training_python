@@ -14,3 +14,11 @@ characters = [
     "le chat potté", 
     "Kirikou"
 ]
+
+# Show random quote
+
+# If user_answer is "B":
+  # leave the program
+
+# Else:
+  # Show another quote
