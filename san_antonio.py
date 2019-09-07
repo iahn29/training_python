@@ -17,8 +17,10 @@ characters = [
 
 # Show random quote
 
-# If user_answer is "B":
-  # leave the program
-
-# Else:
-  # Show another quote
+if user_answer == "B":
+    # leave the program
+    pass
+elif user_answer == "C":
+    print("Désolé mauvaise réponse")
+else:
+    # Show another quote
