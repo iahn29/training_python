@@ -15,22 +15,18 @@ characters = [
     "Kirikou"
 ]
 
-user_answer = 'B'
+def get_random_item_in(my_list):
+  # TODO : get a random number
+  item = my_list[0] # get a quote from the list
+  return(item) #r return the item
 
-# Show random quote
+user_answer = "" 
 
-if user_answer == "B":
-  # leave the program
-  pass
-elif user_answer == "C":
-  print("Désolé mauvaise réponse")
-else:
-  # Show another quote
-  pass
+while user_answer != "q":
+  print(get_random_item_in(quotes))
+  user_answer = input('Tapez entrée pour connaitre une autre citation ou q pour quitter le programme.') 
 
-def show_random_quote(my_list):
-  # get a random number
-  quote = my_list[0]
-  print(quote)
+for character in characters:
+  m_character=character.capitalize()
+  print(m_character)
 
-show_random_quote(quotes)
