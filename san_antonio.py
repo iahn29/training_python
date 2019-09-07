@@ -15,6 +15,8 @@ characters = [
     "Kirikou"
 ]
 
+user_answer = 'B'
+
 # Show random quote
 
 if user_answer == "B":
@@ -26,10 +28,9 @@ else:
   # Show another quote
   pass
 
-def show_random_quote():
+def show_random_quote(my_list):
   # get a random number
-  # get a quote from an array
-  # show the quote in the interpreter
-  pass
+  quote = my_list[0]
+  print(quote)
 
-show_random_quote()
+show_random_quote(quotes)
