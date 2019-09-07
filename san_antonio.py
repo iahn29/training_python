@@ -1,5 +1,7 @@
 # -*- coding: utf8 -*-
 
+import random
+
 quotes = [
     "Ecoutez-moi, Monsieur Shakespeare, nous avons beau être ou ne pas être, nous sommes !", 
     "On doit pouvoir choisir entre s'écouter parler et se faire entendre."
@@ -16,17 +18,17 @@ characters = [
 ]
 
 def get_random_item_in(my_list):
-  # TODO : get a random number
-  item = my_list[0] # get a quote from the list
+  rand_index = random.randint(0, len(my_list) - 1) # random index
+  item = my_list[rand_index] # get a quote from the list
   return(item) #r return the item
+
+def message(character, quote):
+  n_character=character.capitalize()
+  n_quote=quote.capitalize()
+  return "{} a dit : {}".format(n_character,n_quote)
 
 user_answer = "" 
 
 while user_answer != "q":
-  print(get_random_item_in(quotes))
+  print(message(get_random_item_in(characters),get_random_item_in(quotes)))
   user_answer = input('Tapez entrée pour connaitre une autre citation ou q pour quitter le programme.') 
-
-for character in characters:
-  m_character=character.capitalize()
-  print(m_character)
-
