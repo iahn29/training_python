@@ -18,9 +18,18 @@ characters = [
 # Show random quote
 
 if user_answer == "B":
-    # leave the program
-    pass
+  # leave the program
+  pass
 elif user_answer == "C":
-    print("Désolé mauvaise réponse")
+  print("Désolé mauvaise réponse")
 else:
-    # Show another quote
+  # Show another quote
+  pass
+
+def show_random_quote():
+  # get a random number
+  # get a quote from an array
+  # show the quote in the interpreter
+  pass
+
+show_random_quote()
